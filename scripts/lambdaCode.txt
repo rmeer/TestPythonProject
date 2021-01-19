@@ -1,0 +1,9 @@
+import json
+
+def lambda_handler(event, context):
+    print("Received event: \n" + str(event))
+    return_value = json.loads(event['body'])['FirstParameter'] + " " + json.loads(event['body'])['SecondParameter']
+    return {
+        'statusCode': 200,
+        'body': json.dumps(return_value)
+    }
