@@ -1,10 +1,12 @@
 # TestPythonProject
-Testing alternate deployments
+Testing alternate deployments.
 
 ## Web API with Lambda 
 
 1. Create the Lambda function with Python:
 This creates a basic HTTP web API, not a webpage.
+Lambda function is "TestPythonFunction" in the account impinj-cas-nonprod
+
 Deployed Endpoint can be tested doing a POST to: https://04qej1765k.execute-api.us-west-2.amazonaws.com/default/TestPythonFunction
 
 The lambda function takes as input 2 parameter in the json format when doing a post to the above endpoint:
